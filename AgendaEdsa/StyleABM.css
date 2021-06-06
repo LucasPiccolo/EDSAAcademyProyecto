@@ -1,0 +1,102 @@
+﻿/*STYLES SCREEN NUMBER ONE*/
+
+body {
+    background-color: #f6eded !important;
+}
+
+.card-filter {
+    background-color: transparent !important;
+    color: navy !important;
+    font-family:Arial;
+    margin-bottom: 20px !important;
+    border: none !important;
+    margin-top: 50px !important;
+}
+
+.tittle {
+    color: navy;
+}
+/*estilo de la tabla*/
+.data-table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: white !important;
+    color: navy !important;
+}
+
+.div {
+    text-align: right;
+}
+
+.div2 {
+    text-align: center;
+}
+/*boton buscar*/
+.button-buscar {
+    background-color: #247027 !important;
+    color: #ffffff !important;
+    width: 200px !important;
+    
+    
+}
+
+.button-buscar:hover {
+    background-color: #347d37 !important;
+}
+
+/*boton nuevo contacto*/
+.button-nuevo-contacto {
+    background-color: #132b56 !important;
+    width: 200px !important;
+}
+
+.button-nuevo-contacto:hover {
+}
+
+/*boton salir*/
+.button-salir {
+    background-color: #132b56 !important;
+    width: 100px !important;
+}
+    
+/*icons*/
+
+.icon-anular {
+    background: url('Icons/anular.png');
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+}
+
+.icon-zoom {
+    background: url('Icons/zoom.png');
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+}
+
+.icon-edit {
+    background: url('Icons/edit.png');
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+}
+
+.icon-delete {
+    background: url('Icons/delete.png');
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+}
+
+.action-button{
+    margin-right: 10px;
+}
+
+
+/*STYLES SCREEN NUMBER TWO*/

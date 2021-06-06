@@ -9,15 +9,31 @@ namespace Agenda.BLL
 {
     public class AgendaBusiness
     {
-        private List<Entity.Models.Agenda> lstAgenda;
+        private List<Entity.Models.Agenda> lstAgenda = new List<Entity.Models.Agenda>() { 
+            new Entity.Models.Agenda() {
+                Id = 1,
+                ApellidoYNombre = "Bill sdsa",
+                Genero = "Hombres",
+                Pais = "Argentina",
+                FechaIngresoDesde = DateTime.Now,
+                FechaIngresoHasta = DateTime.Now,
+                ContactoInterno = "",
+                Organizacion = "Lucas Organization",           
+                Activo = "",
+                Direccion = "Chacabuco 123",
+                TelFijoInterno = "2877435",
+                TelCelular = "15459875",
+                Email = "jksdf@gmail.com",
+                CuentaSkype = "dskfsdksf",
+                Localidad = "Tandil",
+               
+              
+                                                                     
+            } 
+        };
 
         public void Dispose()
         {
-        }
-
-        public AgendaBusiness(List<Entity.Models.Agenda> lstAgenda)
-        {
-            this.lstAgenda = lstAgenda;
         }
 
         public Entity.Models.Agenda GetAgendaByID(Entity.Models.Agenda agenda)
@@ -50,5 +66,9 @@ namespace Agenda.BLL
             }
         }
 
+        public List<Entity.Models.Agenda> ListAgendas()
+        {
+            return lstAgenda;
+        }
     }
 }
