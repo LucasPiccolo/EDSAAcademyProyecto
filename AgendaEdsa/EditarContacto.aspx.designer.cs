@@ -11,7 +11,7 @@ namespace AgendaEdsa
 {
 
 
-    public partial class NuevoContacto
+    public partial class EditarContacto
     {
 
         /// <summary>

@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AgendaEdsa
+namespace Agenda
 {
 
 
-    public partial class NuevoContacto
+    public partial class Consulta
     {
 
         /// <summary>
@@ -22,15 +22,6 @@ namespace AgendaEdsa
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox ApellidoYNombreText;
-
-        /// <summary>
-        /// GeneroSelect control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList GeneroSelect;
 
         /// <summary>
         /// PaisSelect control.
@@ -49,6 +40,24 @@ namespace AgendaEdsa
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox LocalidadText;
+
+        /// <summary>
+        /// FechaIngresoCalendar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox FechaIngresoCalendar;
+
+        /// <summary>
+        /// FechaEgresoCalendar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox FechaEgresoCalendar;
 
         /// <summary>
         /// ContactoInternoSelect control.
@@ -87,48 +96,12 @@ namespace AgendaEdsa
         protected global::System.Web.UI.WebControls.DropDownList ActivoSelect;
 
         /// <summary>
-        /// DireccionText control.
+        /// DataTable control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DireccionText;
-
-        /// <summary>
-        /// TelefonoFijoInternoText control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TelefonoFijoInternoText;
-
-        /// <summary>
-        /// TelefonoCelularText control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TelefonoCelularText;
-
-        /// <summary>
-        /// EmailText control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EmailText;
-
-        /// <summary>
-        /// CuentaSkypeText control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CuentaSkypeText;
+        protected global::System.Web.UI.WebControls.Table DataTable;
     }
 }

@@ -68,6 +68,8 @@ body {
     height: 20px;
     width: 20px;
     display: inline-block;
+    cursor: pointer;
+    border: none;
 }
 
 .icon-zoom {
@@ -76,6 +78,8 @@ body {
     height: 20px;
     width: 20px;
     display: inline-block;
+    cursor: pointer;
+    border: none;
 }
 
 .icon-edit {
@@ -84,6 +88,8 @@ body {
     height: 20px;
     width: 20px;
     display: inline-block;
+    cursor: pointer;
+    border: none;
 }
 
 .icon-delete {
@@ -92,11 +98,32 @@ body {
     height: 20px;
     width: 20px;
     display: inline-block;
+    cursor: pointer;
+    border: none;
+}
+
+.icon-clear {
+    background: url('Icons/clearFilter.png');
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    float: left;
+    border: none;
 }
 
 .action-button{
     margin-right: 10px;
 }
 
+.icon-consult {
+    background: url('Icons/zoom.png');
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    float: left;
+    border: none;
+}
 
 /*STYLES SCREEN NUMBER TWO*/

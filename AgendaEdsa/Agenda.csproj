@@ -44,12 +44,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -105,8 +113,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <Content Include="AgendaABM.aspx" />
+    <Content Include="ConsultarContacto.aspx" />
+    <Content Include="Consulta.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -126,6 +134,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="NuevoContacto.aspx" />
+    <Content Include="EditarContacto.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Icons\anular.png" />
     <Content Include="Icons\clearFilter.png" />
@@ -169,20 +178,20 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgendaABM.aspx.cs">
-      <DependentUpon>AgendaABM.aspx</DependentUpon>
+    <Compile Include="Consulta.aspx.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AgendaABM.aspx.designer.cs">
-      <DependentUpon>AgendaABM.aspx</DependentUpon>
+    <Compile Include="Consulta.aspx.designer.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="ConsultarContacto.aspx.cs">
+      <DependentUpon>ConsultarContacto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="ConsultarContacto.aspx.designer.cs">
+      <DependentUpon>ConsultarContacto.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Contact.aspx.cs">
@@ -231,6 +240,13 @@
     <Compile Include="NuevoContacto.aspx.designer.cs">
       <DependentUpon>NuevoContacto.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EditarContacto.aspx.cs">
+      <DependentUpon>EditarContacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarContacto.aspx.designer.cs">
+      <DependentUpon>EditarContacto.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -247,14 +263,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Agenda.Entity\Agenda.Entity.csproj">
-      <Project>{2abe8642-2b53-44b4-b666-d8d4cefe53b7}</Project>
-      <Name>Agenda.Entity</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Agenda.BLL\Agenda.BLL.csproj">
       <Project>{83a0b009-e47d-4c08-abff-0bfabdf05b60}</Project>
       <Name>Agenda.BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Agenda.Entity\Agenda.Entity.csproj">
+      <Project>{4233e3a6-de98-4e75-b700-f5c24422c524}</Project>
+      <Name>Agenda.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
