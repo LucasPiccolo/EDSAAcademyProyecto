@@ -137,6 +137,11 @@ namespace Agenda
             }
         }
 
+        
+         
+           
+
+
         protected void Add_Actions_To_Table(Contacto contacto, TableRow row)
         {
             TableCell actionsCell = new TableCell();

@@ -25,6 +25,6 @@ namespace Agenda.Entity
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Contacto> ContactoSet { get; set; }
+        public virtual DbSet<> Gente { get; set; }
     }
 }
